@@ -1,6 +1,5 @@
 <template>
   <header>
-    <h1>Developing web applications and anything that comes up</h1>
     <Avatar class="avatar" />
   </header>
 </template>
@@ -18,22 +17,21 @@ export default {
 
 <style lang="scss" scoped>
 header {
-  position: relative;
-  height: 300px;
+  height: 200px;
   background-image: linear-gradient(#ffa136, #e9602f);
-
-  h1 {
-    position: relative;
-    color: white;
-    margin-top: 0;
-    top: 5rem;
-  }
+  position: relative;
 
   .avatar {
-    position: relative;
     margin-left: auto;
     margin-right: auto;
-    top: 100px;
+    position: relative;
+    top: 50px;
   }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    header {   
+      height: 150px;
+    }
 }
 </style>

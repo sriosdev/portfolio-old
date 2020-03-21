@@ -27,4 +27,11 @@ export default {
         object-fit: cover;
     }
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .avatar {
+        height: 150px;
+        width: 150px;
+    }  
+}
 </style>
