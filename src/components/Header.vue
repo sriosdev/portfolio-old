@@ -18,7 +18,7 @@ export default {
 <style lang="scss" scoped>
 header {
   height: 200px;
-  background-image: linear-gradient(#ffa136, #e9602f);
+  background-image: linear-gradient(#8d36ff, #7213f0);
   position: relative;
 
   .avatar {
