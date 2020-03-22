@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <Header />
+    <SectionButtons />
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
+import SectionButtons from './components/SectionButtons.vue'
 
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    SectionButtons
   }
 }
 </script>
