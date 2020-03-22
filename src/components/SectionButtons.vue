@@ -1,9 +1,9 @@
 <template>
   <section>
-    <Button class="btn-section" text="ejemplo1" :selected="isActive('ejemplo1')" @click.native="select('ejemplo1')"/>
-    <Button class="btn-section" text="ejemplo2" :selected="isActive('ejemplo2')" @click.native="select('ejemplo2')"/>
-    <Button class="btn-section" text="ejemplo3" :selected="isActive('ejemplo3')" @click.native="select('ejemplo3')"/>
-    <Button class="btn-section" text="ejemplo4" :selected="isActive('ejemplo4')" @click.native="select('ejemplo4')"/>
+    <Button class="btn-section" text="About me" :selected="isActive('about')" @click.native="select('about')"/>
+    <Button class="btn-section" text="Projects" :selected="isActive('projects')" @click.native="select('projects')"/>
+    <Button class="btn-section" text="Curriculum" :selected="isActive('cv')" @click.native="select('cv')"/>
+    <Button class="btn-section" text="Contact" :selected="isActive('contact')" @click.native="select('contact')"/>
   </section>
 </template>
 
@@ -17,7 +17,7 @@ export default {
   },
   data: function() {
     return {
-      activeItem: 'ejemplo1'
+      activeItem: this.activeItem = this.$router.currentRoute.name
     }
   },
   methods: {
@@ -25,7 +25,11 @@ export default {
       return this.activeItem === item
     },
     select: function(item) {
-      this.activeItem = item
+      this.goSection(item)
+      this.activeItem = this.$router.currentRoute.name
+    },
+    goSection: function(section) {
+      this.$router.push({ name: section })
     }
   }
 };
