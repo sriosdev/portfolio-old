@@ -2,6 +2,7 @@
   <div id="app">
     <Header />
     <SectionButtons />
+    <router-view></router-view>
   </div>
 </template>
 
