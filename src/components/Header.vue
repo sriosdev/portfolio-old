@@ -16,9 +16,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../styles/variables.scss';
+
 header {
   height: 200px;
-  background-image: linear-gradient(#8d36ff, #7213f0);
+  background-image: linear-gradient($color-primary, $color-secondary);
   position: relative;
 
   .avatar {

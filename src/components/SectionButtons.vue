@@ -1,9 +1,9 @@
 <template>
   <section>
-    <Button class="btn-section" text="About me" :selected="isActive('about')" @click.native="select('about')"/>
-    <Button class="btn-section" text="Projects" :selected="isActive('projects')" @click.native="select('projects')"/>
-    <Button class="btn-section" text="Curriculum" :selected="isActive('cv')" @click.native="select('cv')"/>
-    <Button class="btn-section" text="Contact" :selected="isActive('contact')" @click.native="select('contact')"/>
+    <Button class="btn-section" text="About me" icon="fas fa-user" :selected="isActive('about')" @click.native="select('about')"/>
+    <Button class="btn-section" text="Projects" icon="fas fa-laptop-code" :selected="isActive('projects')" @click.native="select('projects')"/>
+    <Button class="btn-section" text="Curriculum" icon="fas fa-file-alt" :selected="isActive('cv')" @click.native="select('cv')"/>
+    <Button class="btn-section" text="Contact" icon="fas fa-envelope" :selected="isActive('contact')" @click.native="select('contact')"/>
   </section>
 </template>
 
@@ -37,6 +37,7 @@ export default {
 
 <style lang="scss" scoped>
 section {
+  background-image: linear-gradient(#ddd, rgba(255, 255, 255, 0));
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -44,12 +45,13 @@ section {
   padding-top: 5em;
 
   .btn-section {
-    margin: 0 1.5em;
+    margin: 0 0.5em;
   }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
   section {
+    padding-bottom: 0;
     padding-left: 1em;
     padding-right: 1em;
   }

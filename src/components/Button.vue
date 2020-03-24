@@ -1,5 +1,5 @@
 <template>
-  <button :class="isSelected">{{ text }}</button>
+  <button :class="isSelected"><i :class="icon"></i><span class="text">{{ text }}</span></button>
 </template>
 
 <script>
@@ -7,7 +7,8 @@ export default {
   name: "Button",
   props: {
     text: String,
-    selected: Boolean
+    selected: Boolean,
+    icon: String
   },
   computed: {
     isSelected: function() {
@@ -18,31 +19,50 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../styles/variables.scss';
+
 button {
   background-color: white;
-  border: 2.5px solid #8d36ff;
+  border: none;
   border-radius: 50px;
-  color: #8d36ff;
+  color: $color-secondary;
   cursor: pointer;
   font-family: "Baloo 2", cursive;
   font-size: 1.2em;
   font-weight: bold;
-  padding: 0.2em 2em;
+  width: 9em;
+  padding: 0.2em;
 
   &:hover {
-    background-color: darken(#8d36ff, 20%);
-    border: 2.5px solid darken(#8d36ff, 20%);;
+    background-image: linear-gradient(190deg, lighten($color-primary, 12%), lighten($color-secondary, 12%));
     color: white;
+  }
+
+  svg {
+    margin-right: 0.6em;
   }
 }
 
 button.selected {
-  background-color:#8d36ff;
-  border: 2.5px solid #8d36ff;
+  background-image: linear-gradient(190deg, $color-primary, $color-secondary);
   color: white;
+}
 
-  &:hover {
-    background-image: none;
+@media (min-width: 320px) and (max-width: 480px) {
+  button {
+    border-radius: 100%;
+    height: 2.7em;
+    vertical-align: middle;
+    width: 2.7em;
+
+    svg {
+      margin: 0;
+      margin-bottom: -3px;
+    }
+
+    .text {
+      display: none;
+    }
   }
 }
 </style>
