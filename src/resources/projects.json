@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Recipy",
+        "description": "Vue.js platform to create recipes tutorials with social interaction between users.",
+        "img": "cover-recipy.png",
+        "url": "https://github.com/sriosdev/recipy"
+    },
+    {
+        "name": "Recipy - API",
+        "description": "Laravel API RESTful of Recipy project",
+        "img": "cover-recipyapi.png",
+        "url": "https://github.com/sriosdev/recipy-api"
+    },
+    {
+        "name": "Socialphoto",
+        "description": "Laravel social network inspired by Instagram.",
+        "img": "cover-socialphoto.png",
+        "url": "https://github.com/sriosdev/socialphoto"
+    }
+]
