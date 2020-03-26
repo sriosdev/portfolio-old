@@ -67,4 +67,16 @@ h3 {
     flex-direction: column;
   }
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .project {
+        height: 25em;
+        width: 20em;
+
+        .text {
+          padding-left: 0.4em;
+          padding-right: 0.4em;
+        }
+    }  
+}
 </style>
