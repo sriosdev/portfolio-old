@@ -2,7 +2,6 @@
   <section>
     <Button class="btn-section" text="About me" icon="fas fa-user" :selected="isActive('about')" @click.native="select('about')"/>
     <Button class="btn-section" text="Projects" icon="fas fa-laptop-code" :selected="isActive('projects')" @click.native="select('projects')"/>
-    <Button class="btn-section" text="Curriculum" icon="fas fa-file-alt" :selected="isActive('cv')" @click.native="select('cv')"/>
     <Button class="btn-section" text="Contact" icon="fas fa-envelope" :selected="isActive('contact')" @click.native="select('contact')"/>
   </section>
 </template>
