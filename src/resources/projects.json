@@ -1,5 +1,11 @@
 [
     {
+        "name": "Netsharer",
+        "description": "CLI for sharing local machine files or folders in a intranet written in Golang.",
+        "img": "cover-netsharer.png",
+        "url": "https://github.com/sriosdev/netsharer"
+    },
+    {
         "name": "Recipy",
         "description": "Vue.js platform to create recipes tutorials with social interaction between users.",
         "img": "cover-recipy.png",
