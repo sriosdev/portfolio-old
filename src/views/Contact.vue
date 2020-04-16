@@ -17,7 +17,7 @@
       </a>
     </p>
     <p>
-      <a href="mailto:riosfsergio@gmail.com">
+      <a href="mailto:hello@sergiorios.dev">
         <i class="fas fa-envelope"></i> riosfsergio@gmail.com
       </a>
     </p>
