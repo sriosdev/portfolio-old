@@ -57,7 +57,7 @@ a.selected {
 
     svg {
       margin: 0;
-      margin-bottom: -3px;
+      margin-bottom: -14px;
     }
 
     .text {
