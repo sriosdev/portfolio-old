@@ -1,7 +1,8 @@
 <template>
   <section>
-    <Button class="btn-section" text="About me" icon="fas fa-user" :selected="isActive('about')" @click.native="select('about')"/>
+    <Button class="btn-section" text="Home" icon="fas fa-home" :selected="isActive('home')" @click.native="select('home')"/>
     <Button class="btn-section" text="Projects" icon="fas fa-laptop-code" :selected="isActive('projects')" @click.native="select('projects')"/>
+    <Button class="btn-section" text="About me" icon="fas fa-user" :selected="isActive('about')" @click.native="select('about')"/>
     <Button class="btn-section" text="Contact" icon="fas fa-envelope" :selected="isActive('contact')" @click.native="select('contact')"/>
   </section>
 </template>

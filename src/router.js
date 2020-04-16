@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
+import Home from './views/Home.vue'
 import AboutMe from './views/AboutMe.vue'
 import Projects from './views/Projects.vue'
 import Contact from './views/Contact.vue'
@@ -12,6 +13,11 @@ const router = new Router({
   routes: [
     {
       path: '/',
+      name: 'home',
+      component: Home
+    },
+    {
+      path: '/about-me',
       name: 'about',
       component: AboutMe
     },
