@@ -1,5 +1,5 @@
 <template>
-  <button :class="isSelected"><i :class="icon"></i><span class="text">{{ text }}</span></button>
+  <a :class="isSelected"><i :class="icon"></i><span class="text">{{ text }}</span></a>
 </template>
 
 <script>
@@ -21,7 +21,7 @@ export default {
 <style lang="scss" scoped>
 @import '../styles/variables.scss';
 
-button {
+a {
   background-color: white;
   border: none;
   border-radius: 50px;
@@ -43,13 +43,13 @@ button {
   }
 }
 
-button.selected {
+a.selected {
   background-image: linear-gradient(190deg, $color-primary, $color-secondary);
   color: white;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  button {
+  a {
     border-radius: 100%;
     height: 2.7em;
     vertical-align: middle;
