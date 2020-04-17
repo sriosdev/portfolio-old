@@ -48,7 +48,7 @@ a.selected {
   color: white;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 900px) {
   a {
     border-radius: 100%;
     height: 2.7em;
