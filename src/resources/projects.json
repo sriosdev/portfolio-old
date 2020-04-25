@@ -1,7 +1,7 @@
 [
     {
         "name": "Netsharer",
-        "description": "CLI for sharing local machine files or folders in a intranet written in Golang.",
+        "description": "CLI for local files/folders sharing in a intranet written in Golang.",
         "img": "cover-netsharer.png",
         "url": "https://github.com/sriosdev/netsharer"
     },

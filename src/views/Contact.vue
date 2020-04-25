@@ -2,22 +2,22 @@
   <div>
     <h2>Contact me</h2>
     <p>
-      <a href="https://www.linkedin.com/in/sergio-riosf/">
-        <i class="fab fa-linkedin"></i> /sergio-riosf
+      <a href="https://www.linkedin.com/in/sergiorios-dev/" target="_blank">
+        <i class="fab fa-linkedin"></i> /sergiorios-dev/
       </a>
     </p>
     <p>
-      <a href="https://twitter.com/sriosdev">
+      <a href="https://twitter.com/sriosdev" target="_blank">
         <i class="fab fa-twitter"></i> @sriosdev
       </a>
     </p>
     <p>
-      <a href="https://github.com/sriosdev">
+      <a href="https://github.com/sriosdev" target="_blank">
         <i class="fab fa-github"></i> sriosdev
       </a>
     </p>
     <p>
-      <a href="mailto:hello@sergiorios.dev">
+      <a href="mailto:hello@sergiorios.dev" target="_blank">
         <i class="fas fa-envelope"></i> hello@sergiorios.dev
       </a>
     </p>
