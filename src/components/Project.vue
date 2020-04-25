@@ -1,7 +1,7 @@
 <template>
   <a :href="url" target="_blank">
     <div class="project">
-      <img :src="require(`@/assets/${image}`)" alt="Project" />
+      <img :src="require(`@/assets/${image}`)" alt="Project" loading="lazy" />
       <div class="text">
         <h3>{{ name }}</h3>
         <span>{{ description }}</span>
