@@ -6,6 +6,12 @@
         "url": "https://github.com/sriosdev/netsharer"
     },
     {
+        "name": "Conway's Game of Life",
+        "description": "Cellular automaton math game.",
+        "img": "cover-conway.png",
+        "url": "https://github.com/sriosdev/game-of-life"
+    },
+    {
         "name": "Recipy",
         "description": "Vue.js platform to create recipes tutorials with social interaction between users.",
         "img": "cover-recipy.png",
